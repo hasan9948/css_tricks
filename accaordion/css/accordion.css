@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+
+}
+body{
+    background-color: #aaa;
+}
+.container{
+    margin: 50px;
+  
+    width: 40%;
+}
+
+.container .tab-box{
+    margin: 0px;
+   
+    /* background-color: aliceblue; */
+    border-bottom: 2px solid white;
+}
+.container label{
+    background-color: rgb(31, 31, 77);
+    color: aliceblue;
+    /* width: 50%; */
+    display: block;
+    padding: 10px 10px;
+    text-align: justify;
+    font-size: 1.6rem;
+    position: relative;
+    margin: 0%;
+    cursor: pointer;
+} 
+.container input{
+    display: none;
+
+}
+.container .text{
+    background-color: aliceblue;
+    max-height: 0px;
+    overflow: hidden;
+    padding: 0 10px;
+    transition: all 0.3s ;
+}
+
+.container .ha:checked ~ .text{
+   max-height: 100vh;
+
+}
